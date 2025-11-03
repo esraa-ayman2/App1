@@ -1,0 +1,15 @@
+.hero-section {
+  background-color: #1abc9c;
+}
+
+.avatar-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+p {
+  /* font-size: 1rem; */
+  letter-spacing: 1px;
+}

@@ -1,0 +1,78 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+
+}
+
+.pro-form {
+
+  width: 58%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #DEE2E6;
+  border-radius: 0.5%;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.form-group input:focus {
+  border-color: #00bfa5;
+}
+
+.form-group input::placeholder {
+  color: #595C5F;
+}
+
+.floating-label {
+  position: absolute;
+  left: 10px;
+  top: -100%;
+  transform: translateY(150%);
+  font-size: 15px;
+  color: #00bfa5;
+
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+
+.form-group input:not(:placeholder-shown) ~ .floating-label {
+  top: -8px;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 3;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #00bfa5, #1de9b6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(to right, #1de9b6, #00bfa5);
+  box-shadow: 0 4px 15px rgba(0, 191, 165, 0.3);
+}

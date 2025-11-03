@@ -1,0 +1,28 @@
+h2{
+  font-size: 40px;
+}
+
+
+.icon .i-icon{
+  position: relative;
+}
+.icon .i-icon::after{
+content: '';
+height: 3px;
+width: 80px;
+background-color: var(--line-color, #ffffff);
+position: absolute;
+top: 50%;
+left: 150%;
+transform: translateY(-50%);
+}
+.icon .i-icon::before{
+content: '';
+height: 3px;
+width: 80px;
+background-color: var(--line-color, #000);
+position: absolute;
+top: 50%;
+right: 150%;
+transform: translateY(-50%);
+}

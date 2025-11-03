@@ -1,0 +1,24 @@
+
+<section class="portfolio py-5 ">
+  <div class="container ">
+  <app-shard-header [word]="path" class="-mb-2" [color]="'#2C3E50'"></app-shard-header>
+    <div class="row g-4 text-center mt-3">
+    <div class="col-md-4" *ngFor="let item of portfolioItems">
+      <div class="portfolio-item position-relative" (click)="openImage(item.img)">
+        <img [src]="item.img" [alt]="item.alt" class="portfolio-img" />
+        <div
+          class="plus position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center"
+        >
+          <i class="fa-solid fa-plus display-1 fw-bolder rounded-1 text-white"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @if (selectedImage) {
+  <div class="overlay" (click)="closeImage()">
+    <img [src]="selectedImage" class="big-image" (click)="$event.stopPropagation()" />
+  </div>
+  }
+</div>
+</section>

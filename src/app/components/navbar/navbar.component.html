@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg fixed-top py-3"
+     [class.shrink]="isScrolled">
+  <div class="container">
+    <a class="navbar-brand fs-3 fw-bold text-white"
+       [routerLinkActiveOptions]="{exact: true}"
+       routerLink=""
+       routerLinkActive="">Start Framework</a>
+
+    <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase fw-bold p-2 m-2 text-white"
+             routerLink="/about"
+             routerLinkActive="rounded-2 bg-trkwaz">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase fw-bold p-2 m-2 text-white"
+             routerLink="/portfolio"
+             routerLinkActive="rounded-2 bg-trkwaz">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase fw-bold p-2 m-2 text-white"
+             routerLink="/contact"
+             routerLinkActive="rounded-2 bg-trkwaz">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="space my-5"></div>

@@ -1,0 +1,15 @@
+.footer-top{
+  background-color: #2C3E50;
+  color: aliceblue;
+}
+.around-web a{
+color: #fbfbfb;
+outline: #fbfbfb 1px solid;
+}
+.about-freelancer .max-w-p{
+  max-width: 350px;
+}
+.footer-bottom{
+  background-color: #1A252F;
+}
+
